@@ -27,7 +27,11 @@
     "content_scripts": [
       {
         "matches": ["*://www.youtube.com/*"],
-        "js": ["content.js"]
+        "js": ["content.js"],
+        "all_frames": true
       }
+    ],
+    "host_permissions": [
+      "*://www.youtube.com/*"
     ]
   }
